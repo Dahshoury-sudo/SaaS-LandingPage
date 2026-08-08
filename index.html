@@ -253,6 +253,24 @@
             border-color: rgba(255,255,255,0.2);
             transform: translateY(-2px);
         }
+        .btn-demo {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 16px 42px;
+            background: linear-gradient(var(--bg-primary), var(--bg-primary)) padding-box, var(--gradient-main) border-box;
+            border: 2px solid transparent;
+            border-radius: 50px;
+            color: var(--text-primary);
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.05rem; font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(124,58,237,0.15);
+            text-decoration: none;
+        }
+        .btn-demo:hover {
+            transform: scale(1.03) translateY(-2px);
+            box-shadow: 0 0 25px rgba(124,58,237,0.3);
+        }
         .hero-stats {
             display: flex; justify-content: center; gap: 48px;
             margin-top: 64px;
@@ -898,7 +916,7 @@
             <h2 class="section-title">خطط تناسب كل متجر</h2>
             <p class="section-desc">ابدأ مجاناً وكبّر مع نمو متجرك. بدون عقود أو التزامات.</p>
             <div style="margin: 24px 0 48px;">
-                <a href="#" class="btn-primary" style="background: linear-gradient(var(--bg-primary), var(--bg-primary)) padding-box, var(--gradient-main) border-box; border: 2px solid transparent; color: var(--text-primary); box-shadow: 0 4px 24px rgba(124,58,237,0.15);">
+                <a href="#" class="btn-demo">
                     جرّب الإيجنت دلوقتي (Demo)
                 </a>
             </div>
@@ -966,11 +984,11 @@
         <div class="reveal" style="max-width: 800px; margin: 40px auto 0; padding: 24px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
             <h4 style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 16px; text-align: right;">ملاحظات هامة:</h4>
             <ul style="list-style: none; text-align: right; padding: 0;">
-                <li style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                <li style="font-size: 0.9rem; color: rgba(228, 226, 226, 0.95); line-height: 1.7; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
                     <span style="color: var(--accent-amber); font-size: 1.2rem;">💡</span>
                     <span>لو خلصت رصيد الرسائل قبل نهاية الشهر، هيتم تحاسبك على الزيادة بواقع كل 500 رسالة إضافية بـ 150 جنيه، والخدمة بتفضل شغالة بدون انقطاع.</span>
                 </li>
-                <li style="font-size: 0.9rem; color: var(--text-muted); display: flex; align-items: flex-start; gap: 10px;">
+                <li style="font-size: 0.9rem; color: rgba(228, 226, 226, 0.95); line-height: 1.7; display: flex; align-items: flex-start; gap: 10px;">
                     <span style="color: var(--accent-amber); font-size: 1.2rem;">💡</span>
                     <span>تكلفة رسائل واتساب الرسمية عبر Meta بتتحاسب منفصل حسب استهلاكك الفعلي، وهتظهر في فاتورة منفصلة واضحة.</span>
                 </li>
